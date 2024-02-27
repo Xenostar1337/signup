@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     width: 100vw;
     height: 100vh;    
@@ -17,12 +20,9 @@ a {
 }
 
 .card {  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw; 
-    height: 56.25vw;   
+    height: 56.25vh; 
+    flex: 0, 0, 100vw;  
+      
     background-color: white;
     display: flex;    
     justify-content: center;
@@ -31,6 +31,7 @@ a {
 }
 
 .hook {
+    flex: 0;
     height: fit-content;
     word-wrap: normal;
     font-family: 'Courier New', Courier, monospace;
@@ -45,9 +46,7 @@ p {
 }
 
 .photoarea {
-    height: 100%; 
-    width: 30%; 
-    padding-top: -10%;
+    flex: 0 0 320px;
     background: url('spaceexplore.jpg');  
     background-size: 100% 100%; 
        
@@ -62,6 +61,7 @@ p {
 }
 
 form {
+    flex: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .forminfo{
