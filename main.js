@@ -3,6 +3,7 @@ const submitButton = document.getElementsByClassName('signup')[0];
 const password = document.getElementById("password");
 const passwordConfirm = document.getElementById("passwordConfirm");
 
+
 function passwordCheck(){
     if (password.value !== passwordConfirm.value){
         error.style.visibility = 'visible';
